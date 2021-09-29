@@ -1,0 +1,73 @@
+﻿@* Використання бібліотеки Microsoft.Extensions.Localization, для отримання типу IStringLocalizer *@
+@using Microsoft.Extensions.Localization
+@* Підключення контроллерів *@
+@using LocalizationDefault.Controllers
+@* Ініціалізація інтерфейсу локалізатора *@
+@inject IStringLocalizer<HomeController> Localizer
+
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                @* Відображення на сторінці данних локалізатора *@
+                <h1 class="display-4">@Localizer["Email"]</h1>
+                <p class="lead">@Localizer["Home"]</p>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <h2 class="text-center">@Localizer["Rules"]</h2>
+            <div class="card mt-3">
+                <div class="card-header">
+                    @Localizer["h1"]
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["RulesText"]:</h5>
+                    <p class="card-text">
+                        @Localizer["p1.1"]
+                    </p>
+                    <p class="card-text">
+                        @Localizer["p1.2"]
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    @Localizer["h2"]:
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["RulesText"]</h5>
+                    <p class="card-text">
+                        @Localizer["p2.1"]
+                    </p>
+                    <p class="card-text">
+                        @Localizer["p2.2"]
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    @Localizer["h3"]:
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["RulesText"]</h5>
+                    <p class="card-text">
+                        @Localizer["p3.1"]
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    @Localizer["h4"]:
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["RulesText"]</h5>
+                    <p class="card-text">
+                        @Localizer["p4.1"]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>

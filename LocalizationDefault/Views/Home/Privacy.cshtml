@@ -1,0 +1,12 @@
+﻿@* Використання бібліотеки Microsoft.Extensions.Localization, для отримання типу IStringLocalizer *@
+@using Microsoft.Extensions.Localization
+@* Підключення контроллерів *@
+@using LocalizationDefault.Controllers
+@* Ініціалізація інтерфейсу локалізатора *@
+@inject IStringLocalizer<HomeController> Localizer
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@Localizer["Privacy"]</h1>
+
+<p>@Localizer["PrivacyData"]</p>
