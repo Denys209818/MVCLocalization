@@ -144,8 +144,8 @@
     <value>In the Configure method, get the specified settings through dependencies
                          ApplcationServices.GetService (), and pass their values to the UseRequestLocalization method,
                          which in turn sets the settings for using localization
-                        ApplcationServices.GetService(), і передати значення їх у метод UseRequestLocalization,
-                        який у свою чергу задає налаштування для використання локалізації</value>
+                        ApplcationServices.GetService(), and pass their values to the UseRequestLocalization method,
+                         which in turn sets the settings for using localization</value>
   </data>
   <data name="p2.1" xml:space="preserve">
     <value>Create and initialize a language collection and set a standard language</value>
@@ -160,7 +160,7 @@
     <value>Create a Resources folder. In the resources folder, create .resx files that will contain the data to be translated.
                          Importantly! The file name must be with a namespace. For example, if HomeController is behind namespace
                          LocalizationDefault.Controllers, the file should be namedControllers.Filename.[lang].resx. 
-                        Детальніше у коді...</value>
+                        More in the code ...</value>
   </data>
   <data name="p4.1" xml:space="preserve">
     <value>Connect Microsoft.Extensions.Localization to use IStringLocalizer &lt;Type&gt;.
